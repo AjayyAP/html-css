@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #round1{
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            margin: 50px auto;
+            border-radius: 50%;
+            animation-name:bounce ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        } 
+           @keyframes bounce{
+               from{
+                    transform: translateX(-200px);
+                }
+                to{
+                    transform:translateY(200px);
+                }
+           }  
+           #round2{
+             height: 50px;
+            width: 50px;
+            background-color: brown;
+            margin: 50px auto;
+            border-radius: 50%;
+            animation-name:bouncee ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+           } @keyframes bouncee{
+               from{
+                    transform: translateY(200px);
+                }
+                to{
+                    transform:translateX(200px);
+                }
+
+           }
+
+           #round3{
+
+            height: 50px;
+            width: 50px;
+            background-color: blueviolet;
+            margin: 50px auto;
+            border-radius: 50%;
+            animation-name:bounceee;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+     }
+          @keyframes bounceee{
+               from{
+                 transform: translateX(200px);
+                }
+                to{
+                transform:translateY(200px);
+                }
+
+          }    
+    </style>
+</head>
+<body>
+    <div id="round1"> </div>
+     <div id="round2"> </div>
+     <div id="round3"> </div>
+</body>
+</html>
